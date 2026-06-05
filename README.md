@@ -1,66 +1,28 @@
-## Foundry
+# HelloArchitect - Arc Testnet
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A simple smart contract deployed on Arc Testnet using Foundry.
 
-Foundry consists of:
+## Contract Details
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Network:** Arc Testnet
+- **Contract Address:** 0xD19CC6F46740b49D8fA5146725609CeB7A6ee86b
+- **Deployer:** 0x54b4B44749a95070560509B6Ec0be501665CcF63
+- **Transaction Hash:** 0x554d2618503013f7931a7c6a07bdd0d9a4d009e3925ff13ca2905e0deec1acd6
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- Store and retrieve a greeting message on-chain
+- Emit events on greeting changes
+- Built with Foundry and Solidity ^0.8.30
 
-## Usage
+## Getting Started
 
-### Build
-
-```shell
-$ forge build
+```bash
+forge install
+forge test
+forge build
 ```
 
-### Test
+## Explorer
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[View on Arc Testnet Explorer](https://testnet.arcscan.app/address/0xD19CC6F46740b49D8fA5146725609CeB7A6ee86b)
